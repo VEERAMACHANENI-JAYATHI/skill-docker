@@ -1,5 +1,5 @@
 const config = {
-  url: "http://localhost:2002"
+  url: "http://localhost:2030/skillmanagerbackend"
 
 };
 
