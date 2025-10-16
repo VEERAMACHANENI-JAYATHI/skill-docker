@@ -1,0 +1,115 @@
+/* Container */
+.skill-container {
+  max-width: 1200px;
+  margin: auto;
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Headings */
+.skill-container h2 {
+  color: #007bff;
+  margin-bottom: 20px;
+}
+
+.skill-container h3 {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+/* Labels for Inputs */
+.skill-container input::placeholder {
+  color: #888;
+  font-weight: bold;
+}
+
+.skill-container input {
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  width: 180px;
+  font-size: 14px;
+}
+
+/* Buttons */
+.skill-container button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+.skill-container button:hover {
+  background-color: #0056b3;
+}
+
+/* Table */
+.skill-container table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+.skill-container table th,
+.skill-container table td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: left;
+}
+
+.skill-container table th {
+  background-color: #007bff;
+  color: white;
+}
+
+.skill-container table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+/* Status Message */
+.skill-container div[style*="color:"] {
+  font-weight: bold;
+}
+
+/* Navbar */
+.skill-container nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #007bff;
+  padding: 10px 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.skill-container nav h2 {
+  color: white;
+  margin: 0;
+}
+
+.skill-container nav button {
+  background-color: white;
+  color: #007bff;
+  margin-left: 10px;
+}
+
+.skill-container nav button:hover {
+  background-color: #e6e6e6;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .skill-container div[style*="display: flex"] {
+    flex-direction: column;
+  }
+  .skill-container input {
+    width: 100%;
+  }
+}
