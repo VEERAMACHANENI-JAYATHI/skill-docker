@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import './style.css';
-import config from './config.js';
 
 const SkillManager = () => {
   const [skills, setSkills] = useState([]);
@@ -17,7 +16,7 @@ const SkillManager = () => {
   const [message, setMessage] = useState('');
   const [editMode, setEditMode] = useState(false);
 
-  const baseUrl = `${config.url}/skillapi`;
+  const baseUrl = `${import.meta.env.VITE_API_URL}/skillapi`;
   const skillKeys = ['id', 'skillName', 'level', 'experience', 'topics'];
 
   useEffect(() => {
