@@ -16,7 +16,7 @@ services:
     image: veeramachanenijayathi/docker-backend:latest
     container_name: springboot
     ports:
-      - "2025:2002"
+      - "2056:2007"
     depends_on:
       - mysqldb
     restart: on-failure
