@@ -16,7 +16,7 @@ const SkillManager = () => {
   const [message, setMessage] = useState('');
   const [editMode, setEditMode] = useState(false);
 
-  const baseUrl = `${import.meta.env.VITE_API_URL}/skillapi`;
+  const baseUrl = `${import.meta.env.VITE_API_URL=" "}/skillapi`;
   const skillKeys = ['id', 'skillName', 'level', 'experience', 'topics'];
 
   useEffect(() => {
