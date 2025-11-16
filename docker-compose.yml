@@ -13,7 +13,7 @@ services:
       - springboot-mysql-net
 
   backend:
-    image: veeramachanenijayathi/docker-backend:latest
+    image: veeramachanenijayathi/docker-backend-1:latest
     container_name: springboot
     ports:
       - "2025:2007"
@@ -24,7 +24,7 @@ services:
       - springboot-mysql-net
 
   frontend:
-    image: veeramachanenijayathi/docker-frontend:latest
+    image: veeramachanenijayathi/docker-frontend-1:latest
     container_name: react
     ports:
       - "3001:80"
